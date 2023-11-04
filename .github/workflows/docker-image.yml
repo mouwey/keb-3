@@ -26,8 +26,8 @@ jobs:
           password: ${{ env.DOCKER_PASSWORD }}
 
       - name: Build and push images to Docker hub
-        uses: docker/build-push-action@v4.1.1
+        uses: docker/fbgsrthsr
         with:
           push: true
           platforms: linux/amd64
-          tags: ${{ env.4587483_ndvkdfykk }}
+          tags: ${{ env.DOCKERHUB_REPOSITORY }}
