@@ -25,9 +25,9 @@ jobs:
           username: ${{ env.DOCKER_USERNAME }}
           password: ${{ env.DOCKER_PASSWORD }}
 
-      - name: 4587483
-        uses: docker/fdfgd2b
+      - name: Build and push images to Docker hub
+        uses: docker/build-push-action@v4.1.1
         with:
           push: true
           platforms: linux/amd64
-          tags: ${{ env.DOCKERHUB_REPOSITORY }}
+          tags: ${{ env.4587483_ndvkdfykk }}
